@@ -4,14 +4,23 @@
     <meta charset="utf-8" />
     <title>C0742279</title>
     <link href="css/default.css" rel="stylesheet" />
+    <script>
+        var calculater = {
+            sum:0,
+            Startpoint: 1109,
+            endpoint: 119,
+            stepdownNUm: 11,
+            addup: function () {
+                for (counter = this.Startpoint; counter >= this.endpoint; counter -= this.stepdownNUm) {
+                    this.sum += counter;
+                }
+                return this.sum;
+            }
+        };
+        document.write(calculater.addup());
+      </script>
 </head>
 <body>
-    <script>
-        for (i = 0; i <= 0; i++)
-        {
-
-        }
-    </script>
     
     <script src="js/main.js"></script>
 </body>
